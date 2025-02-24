@@ -1,109 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <title>Document</title>
-
     <style>
         body{
-            background-color: #55423d;
-margin: 0%;
-padding: 0%;
+            margin: 0%;
+            padding: 0%;
         }
-.container{
-    border: 1px solid black;
-margin: 100px auto;
-width: 40%;
-background-color: #e78fb3;
-
-}
-.text{
-    text-align: center;
- color: black;
-}
-.imageee{
-    height: 200px;
-    display: block;
-    margin: 0% auto;
-}
-.btn{
-    display: block;
-    margin: 30px auto;
-    font-size: 30px;
-    font-weight: 40px;
-    width: 120px;
-    padding: 10px;
-border-radius: 20px;
-border: none;
-box-shadow: 1px 1px 1px 1px black;
+        .container{
+            height: 700px;
+            width:1600px;
+            background-image: url(/image\ copy.png);
+        }
+        .btn:hover{
+            color: brown;
+            background-color:wheat;
 cursor: pointer;
-color: #271c19;
-background-color: #ffc0ad;
-}
-.footer{
-    margin-top: 10px;
-}
+        }
+
+        .btn{
+/* display: block; */
+margin: 260px 710px;
+border: 1px solid black;
+border-radius: 10px;
+background-color: rgb(203, 137, 137);
+color: black;
+font-size: 30px;
+width: 200px;
+        }
+        .head{
+            color: rgb(220, 18, 18);
+            text-align: center;
+            margin:0;
+
+            padding: 120px;
+        }
     </style>
 </head>
 <body>
-    
-<div class="container">
-<h1 class="text">
-    LETS ROLL THE DICS....
-</h1>
-<img src="defual.png" class="imageee" id="img" >
- <button class="btn" onclick="btn()">
-    ROLL
- </button>
+    <div class="container">
+        <h1 class="head">ONLINE DICS ROLLER...</h1>
+       <a href="/game.html"> <button class="btn">
 
-</div>
-<footer class="footer" style="background-color: #222; color: #fff; padding: 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: auto;">
-        <p>&copy; 2025 YourGameName. All Rights Reserved.</p>
-        <nav>
-            <a href="/terms" style="color: #ddd; margin: 0 10px;">Terms of Service</a> |
-            <a href="/privacy" style="color: #ddd; margin: 0 10px;">Privacy Policy</a> |
-            <a href="/support" style="color: #ddd; margin: 0 10px;">Support</a>
-        </nav>
-        <div style="margin-top: 10px;">
-          
-        </div>
+            
+<!-- <img src="image.png"> -->
+LETS START
+
+        </button>
+    </a>
     </div>
-</footer>
-
-
-<script>
-
-
-function btn(){
-
-    const min=1
-const max=7
-const num = Math.floor(Math.random()*(max - min))+min;
-
-const image=document.getElementById("img")
-
-    if(num==1){
-        image.src="one.png";
-    }
-    else if(num==2){
-        image.src="two.png"
-    }
-    else if(num==3){
-        image.src="three.png"
-    }
-    else if(num==4){
-        image.src="four.png"
-    }
-    else if(num==5){
-        image.src="five.png"
-    }
-    else if(num==6){
-        image.src="six.png"
-    }
-}
-
-</script>
-
+  
+    
 </body>
 </html>
