@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #55423d;
+
+        }
+.container{
+    border: 1px solid black;
+margin: 20px auto;
+width: 40%;
+background-color: #e78fb3;
+
+}
+.text{
+    text-align: center;
+ color: black;
+}
+.imageee{
+    height: 200px;
+    display: block;
+    margin: 0% auto;
+}
+.btn{
+    display: block;
+    margin: 30px auto;
+    font-size: 30px;
+    font-weight: 40px;
+    width: 120px;
+    padding: 10px;
+border-radius: 20px;
+border: none;
+box-shadow: 1px 1px 1px 1px black;
+cursor: pointer;
+color: #271c19;
+background-color: #ffc0ad;
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+<h1 class="text">
+    LETS ROLL THE DICS....
+</h1>
+<img src="defual.png" class="imageee" id="img" >
+ <button class="btn" onclick="btn()">
+    ROLL
+ </button>
+
+</div>
+
+
+<script>
+
+
+function btn(){
+
+    const min=1
+const max=7
+const num = Math.floor(Math.random()*(max - min))+min;
+
+const image=document.getElementById("img")
+
+    if(num==1){
+        image.src="one.png";
+    }
+    else if(num==2){
+        image.src="two.png"
+    }
+    else if(num==3){
+        image.src="three.png"
+    }
+    else if(num==4){
+        image.src="four.png"
+    }
+    else if(num==5){
+        image.src="five.png"
+    }
+    else if(num==6){
+        image.src="six.png"
+    }
+}
+
+</script>
+
+</body>
+</html>
